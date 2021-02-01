@@ -1,0 +1,248 @@
+* {
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+/* 
+body {
+    width: 2000px;
+    height: 4000px;
+    justify-content: center;
+} */
+.content_title{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.5em;
+    color: rgb(173, 166, 146);
+}
+
+#intro_title{
+    letter-spacing: 0.5em;
+}
+
+.content_text{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+}
+
+
+/* 인트로 설정 */
+
+.intro_img {
+    height: 700px;
+    width: 500px;
+    padding-bottom: 5px;
+}
+
+.email_a:hover{
+    cursor: pointer;
+    color: gold;
+}
+
+.git_a, .email_a{
+    color: mediumaquamarine;
+}
+
+.git_a:hover{
+    color: gold;
+}
+
+/* 
+    네비게이션 설정
+ */
+.nav_a {
+text-decoration: none;
+font-size: 25px;
+color: rgb(129, 128, 128);
+position: relative;
+margin-bottom: 50px;
+transition: all .2s;
+overflow: hidden;
+letter-spacing: 0.4em;
+font-family: 'Black Han Sans', sans-serif;
+}
+
+.nav_a:last-child {
+margin-bottom: 0px;
+}
+
+.nav_a:hover{
+    color: gold;
+}
+
+
+/* 
+    skill 설정
+*/
+
+.icons:hover{
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 22px;
+    position: absolute;
+}
+
+
+#icon_html {
+    color: rgb(231, 74, 11);
+}
+
+#icon_database {
+    color : lightskyblue;
+}
+
+#icon_css{
+    color: rgb(48, 59, 163);
+}
+
+#icon_js{
+    color: rgb(201, 201, 31);
+}
+
+#icon_bootstrap{
+    color: darkviolet;
+}
+
+.click_msg{
+    font-size: 40px;
+    font-weight: 800;
+    color: springgreen;
+}
+
+
+/*
+    project
+*/
+
+.project_img{
+    height: 300px;
+    width: 450px;
+    margin-right: 100px;
+}
+
+
+/* 
+    presentation
+ */
+.presentation_img{
+    height: 700px;
+    width: 600px;
+    margin-left: 18%;
+}
+
+.presentation_min{
+    min-width: 1000px;
+    min-height: 800px;
+}
+
+
+/* 
+    계산기
+*/
+.cal{
+    width: 280px;
+    height: 450px;
+    display: grid;
+    
+    padding: 20px;
+    background-color: dimgray;
+
+    grid-template-areas: "temp temp temp temp"
+                         "result result result result"
+                         "blank blank blank blank"
+                         "one two three plus"
+                         "four five six minus"
+                         "seven eight nine multi"
+                         "cancel zeroo equl divide";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30px 50px auto;
+    
+    border-radius: 10px;
+    box-shadow: 3px -3px 10px black;
+}
+
+.cal > button {
+    border-radius: 50%;
+}
+
+.cal > button {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.cal > button:hover{
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.cal > button:active{
+    box-shadow: 0 0 0 black;
+}
+
+
+.cal > button:focus{
+    outline: none;
+    border: none;
+}
+
+textarea{
+    text-align: right;
+    resize: none;
+    background-color: rgb(183, 241, 96);
+}
+
+#temp{
+    grid-area: temp;
+    font-size: 15px;
+    color: gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 0px;
+    border-top: black 3px solid;
+    border-left: black 3px solid;
+}
+
+#result{
+    grid-area: result;
+    font-size: 30px;
+    height: 60px;
+    font-weight: bold;
+    border-left: 3px solid black;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+#one{grid-area: one;}
+#two{grid-area: two;}
+#three{grid-area: three;}
+#four{grid-area: four;}
+#five{grid-area: five;}
+#six{grid-area: six;}
+#seven{grid-area: seven;}
+#eight{grid-area: eight;}
+#nine{grid-area: nine;}
+#zeroo{grid-area: zeroo;}
+
+#cancel{grid-area: cancel; background-color: red;}
+
+#equl{grid-area: equl; background-color: royalblue;}
+
+#plus{grid-area: plus; background-color: sandybrown;}
+#minus{grid-area: minus; background-color: sandybrown;}
+#divide{grid-area: divide; background-color: sandybrown;}
+#multi{grid-area: multi; background-color: sandybrown;}
+#blank{grid-area: blank;}
+
+#contact{
+    height: 13%;
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 부트스트랩 -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/css/circle.css">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+        crossorigin="anonymous">
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+        crossorigin="anonymous"></script>
+    
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+    <!-- 커스텀 -->
+    <link rel="stylesheet" href="./bootstrap/css/myFrame.css">
+        
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>개인 프로젝트</title>
+</head>
+
+<body class="bg-secondary">
+    
+<div class="container-fluid">
+
+    <div class="row justify-content-end">
+        <nav class="col-xxl-3 fixed-top px-0 h-auto bg-black">
+
+            <!-- navBar-->
+            <ul id="mainNav" class="nav justify-content-center flex-xxl-column my-xxl-5 pt-xxl-5 px-xxl-5">
+                <li class="nav-item text-xxl-end mb-xxl-4 py-xxl-4">
+                    <a id="nav_intro" class="nav-link fs-4 nav_a" href="#intro">Introduce</a> 
+                </li>
+                <li class="nav-item text-xxl-end mb-xxl-4 py-xxl-4">
+                    <a id="nav_skill" class="nav-link fs-4 nav_a" href="#skill">Skills</a> 
+                </li>
+                <li class="nav-item text-xxl-end mb-xxl-4 py-xxl-4">
+                    <a id="nav_project" class="nav-link fs-4 nav_a" href="#project">Project</a> 
+                </li>
+                <li class="nav-item text-xxl-end mb-xxl-4 py-xxl-4">
+                    <a id="nav_contact" class="nav-link fs-4 nav_a" href="#contact">Contact</a> 
+                </li>
+            </ul>
+        </nav>
+
+        <!-- contentSpace--> 
+        <div class="col-xxl-9 g-0 text-light">
+            
+            <!-- info -->
+            <div class="container overlay">
+                <div id="intro" class="row py-5 me-5">   
+                    <h1 id="intro_title" class="content_title" 
+                        data-aos="fade-right" data-aos-duration="2500">
+                    Introduce
+                    </h1>   
+
+                    <div class="col-xxl py-5 ps-xxl-99" data-aos="fade-down" data-aos-duration="2500">
+                        <img src="assets/image/초능력.jpg" class="img-profile shadow-custom rounded intro_img" alt="...">
+                    </div>
+                    
+                    <div class="col-xxl pt-3 ps-0"  data-aos="zoom-out" data-aos-duration="2500">
+                        <ul class="" type="none"> 
+                            <!-- 소개 이름 -->
+                            <li class="content_text pt-5 pb-4">둘리 </li>
+
+                            <!-- 소개 생일 -->
+                            <li class="content_text pb-3 ps-2">
+                                <!-- <i class="fas fa-birthday-cake"></i> -->
+                                    <span class="birth_a fs-2 ps-5">
+                                        <i class="fas fa-birthday-cake"></i>&nbsp;1억년전 / 01 / 01
+                                    </span>
+                            </li>
+
+                            <li class="content_text pb-3 ps-2">
+                                    <span class="birth_a fs-2 ps-5">
+                                        <i class="fas fa-user-graduate"></i>&nbsp;호그와트 졸업
+                                    </span>
+                            </li>
+                            
+                            <!-- 소개 내용 -->
+                            <li class="content_text pb-3 pt-5 ps-5 fs-3">
+                                빠른 이해와 습득력으로 <br>
+                                Front 와 Back 양쪽 다 가능한 <br>
+                                준비된 신입 웹 개발자 입니다. <br>
+                            </li>
+                        </ul> 
+                    </div>
+               
+                </div>
+            </div>
+       
+  
+            <!-- skill-->
+            <div id="skill" class="bg-dark text-light p-5"> <!-- text- light 지우기 -->
+                <h1 class="content_title p-5" data-aos="fade-right" data-aos-duration="2000">Skills</h1>
+            <div class="container ps-xxl-99 py-5">
+                <!-- back -->
+                <div class="row py-5">
+                    <div class="col-xxl-3 fs-2 content_text pe-5" data-aos="fade-in" data-aos-duration="2000">
+                        <i class="fas fa-caret-square-right text-teal"></i>
+                            &nbsp;Backend</div>
+                    <div class="col-xxl-6">
+                        <!-- java -->
+                        <div class="c100 p1 bg-java" data-aos="flip-left" data-aos-duration="1000">
+                            <span class="icons" id="icon_java" 
+                                    onclick="clickEvent1('JAVA 99%', '&#34;JAVA&#34;를 통한 프로그래밍 언어 습득')"
+                                    onmouseover="moseoverChange('icon_java', 'JAVA')"
+                                    onmouseout="moseoutJava('icon_java')" > 
+                                <i class="fab fa-java fa-2x"></i>
+                            </span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <!-- oracle-->
+                        <div class="c100 p20 bg-database" data-aos="flip-left" data-aos-duration="1500">
+                            <span class="icons" id="icon_database" 
+                                    onclick="clickEvent1('ORACLE 80%', '&#34;ORACLE&#34;를 통한 데이터 생성 / 관리')"
+                                    onmouseover="moseoverChange('icon_database', 'ORACLE')"
+                                    onmouseout="moseoutDB('icon_database')" >
+                                <i class="fas fa-database fa-2x"></i>
+                            </span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skill_msg1" class="col-xxl content_text fs-1" data-aos="fade-in" data-aos-duration="2500">
+                        Backend <br> 개발을 위한 기초
+                    </div>
+                </div>
+
+                <!-- front -->
+                <div class="row py-5">
+                    <div class="col-xxl-3 fs-2 content_text" data-aos="fade-in" data-aos-duration="2000">
+                        <i class="fas fa-caret-square-right text-teal"></i>
+                            &nbsp;Frontend</div>
+                    <div class="col-xxl-6">
+                        <!-- html-->
+                        <div class="c100 p10 bg-html" data-aos="flip-left" data-aos-duration="1000">
+                            <span class="icons" id="icon_html" 
+                                onclick="clickEvent2('HTML 90%', '&#34;HTML5&#34;를 통한 웹사이트의 디자인 개념')"
+                                onmouseover="moseoverChange('icon_html', 'HTML5')"
+                                onmouseout="moseoutHTML('icon_html')">
+                                <i class="fab fa-html5 fa-2x"></i>
+                            </span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <!-- css -->
+                        <div class="c100 p20 bg-css" data-aos="flip-left" data-aos-duration="1500">
+                            <span class="icons" id="icon_css"
+                                 onclick="clickEvent2('CSS 80%', '&#34;CSS3&#34;를 통한 웹사이트 디자인 구현')"
+                                 onmouseover="moseoverChange('icon_css', 'CSS3')"
+                                 onmouseout="moseoutCSS('icon_css')">
+                                <i class="fab fa-css3 fa-2x"></i>
+                            </span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <!-- js -->
+                        <div class="c100 p30 bg-js" data-aos="flip-left" data-aos-duration="2000">
+                            <span class="icons" id="icon_js" 
+                                onclick="clickEvent2('JS 70%', '&#34;JavaScript&#34;를 통한 웹사이트 기능 구현')"
+                                onmouseover="moseoverChange('icon_js', 'JScript')"
+                                onmouseout="moseoutJS('icon_js')">
+                                <i class="fab fa-js fa-2x"></i>
+                            </span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <!-- bootstrap -->
+                        <div class="c100 p30 bg-bootstrap" data-aos="flip-left" data-aos-duration="2500">
+                            <span class="icons" id="icon_bootstrap" 
+                                    onclick="clickEvent2('BootStrap 70%', '&#34;BootStrap&#34;를 통한 디자인 프레임워크')" 
+                                    onmouseover="moseoverChange('icon_bootstrap', 'BootS')"
+                                    onmouseout="moseoutBS('icon_bootstrap')">
+                                <i class="fab fa-bootstrap fa-2x"></i>
+                            </span>
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skill_msg2" class="col-xxl content_text fs-1" data-aos="fade-in" data-aos-duration="2500">
+                        Frontend <br> 개발을 위한 기초
+                    </div>
+                </div>
+
+                <!-- server -->
+                <div class="row py-5">
+                    <div class="col-xxl-3 fs-2 content_text" data-aos="fade-in" data-aos-duration="2000">
+                        <i class="fas fa-caret-square-right text-teal"></i>
+                            &nbsp;Server</div>
+                    <div class="col-xxl-6">
+                        <!-- jsp -->
+                        <div class="c100 p20 bg-java" data-aos="flip-left" data-aos-duration="1000">
+                            <span class="icons" id="icon_jsp" 
+                                onclick="clickEvent3('JSP 80%', '&#34;JSP&#34;를 통한 MVC패턴의 개념다지기')"
+                                onmouseover="moseoverChange('icon_jsp', 'JSP')"
+                                onmouseout="moseoutJSP('icon_jsp')">
+                                <i class="fab fa-java fa-2x"></i>
+                            </span>  
+                            <div class="slice">
+                                <div class="bar"></div>
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skill_msg3" class="col-xxl content_text fs-1" data-aos="fade-in" data-aos-duration="2500">
+                        Server <br> 개발을 위한 기초
+                    </div>
+                </div>
+              </div>
+            </div>
+
+        <!-- content 2-->
+            <div id="project" class="bg-secondary text-light p-5">
+                <h1 class="content_title p-5" data-aos="fade-right" data-aos-duration="2500">Project</h1>
+                <div class="container pt-5 ps-xxl-99">
+                    <!-- 첫번째 프로젝트 -->
+                    <div class="row">
+                      <div class="col-xxl-5 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="pb-5">
+                            <!-- <img src="assets/image/포스로그인.png" class="project_img" alt=""> -->
+                            <img src="assets/image/프로젝트.jpg" class="project_img" alt="">
+                        </div>
+                      </div>
+                      <div class="col-xxl border-2 border-bottom content_text py-5 fs-1 fw-bold" 
+                            data-aos="fade-left" data-aos-duration="2000">
+                        <!-- Java의 핵심인 객체화에 연습을 위한 간단한 POS 프로그램 Project <br> -->
+                        Java의 핵심인 객체화에 연습을 위한 간단한 프로그램 Project <br> 
+                        <div class="pt-5">
+                            <button onclick="location.href='project1.html'" type="button" class="btn btn-outline-warning  fs-1">
+                                LEARN MORE
+                            </button>
+                        </div>
+                      </div>
+                    
+                    <div class="row pt-5">
+                        <div class="col-xxl-5 d-flex justify-content-center pb-5" data-aos="fade-right" data-aos-duration="2000">      
+                            <div class="cal">
+                                <textarea id="temp" readonly></textarea>
+                                <textarea id="result" readonly></textarea>
+                                <div id="blank"></div>
+                                <button id="one" onclick="numBtnClick(1)">1</button>
+                                <button id="two" onclick="numBtnClick(2)">2</button>
+                                <button id="three" onclick="numBtnClick(3)">3</button>
+                                <button id="four" onclick="numBtnClick(4)">4</button>
+                                <button id="five" onclick="numBtnClick(5)">5</button>
+                                <button id="six" onclick="numBtnClick(6)">6</button>
+                                <button id="seven" onclick="numBtnClick(7)">7</button>
+                                <button id="eight" onclick="numBtnClick(8)">8</button>
+                                <button id="nine" onclick="numBtnClick(9)">9</button>
+                                <button id="zeroo" onclick="numBtnClick(0)">0</button>
+                     
+                                <button id="minus" onclick="operBtnClick('-')">-</button>
+                                <button id="plus" onclick="operBtnClick('+')">+</button>
+                                <button id="divide" onclick="operBtnClick('/')">%</button>
+                                <button id="multi" onclick="operBtnClick('*')">x</button>
+                     
+                                <button id="cancel" onclick="cancelBtnClick()">C</button>
+                     
+                                <button id="equl" onclick="equlBtnClick()">=</button>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xxl border-2 border-bottom content_text fs-1 py-5 fw-bold" 
+                            data-aos="fade-left" data-aos-duration="2000">
+                          JavaScript 연습을 위한 간단한 웹 계산기 구현 <br>
+                          <div class="pt-5 fs-1"><i class="fas fa-angle-double-left text-warning"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- 두번째 프로젝트 -->
+                    <div class="row pt-5">
+                        <div class="col-xxl-5 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="pb-5">
+                                <img src="assets/image/개인프로젝트.png" class="project_img" alt="">                                
+                            </div>
+                        </div>
+                        <div class="col-xxl border-2 border-bottom content_text py-5 fs-1 fw-bold" 
+                            data-aos="fade-left" data-aos-duration="2000">
+                          Front 연습을 위한 개인 포트폴리오 웹사이트 <br>
+                          <div class="pt-5"><h1 class="text-warning fs-1">this!</h1></div>
+                        </div>
+                    </div>
+                    
+
+                   <!-- 세번째 프로젝트 -->
+                   <div class="row pt-5 pb-5">
+                        <div class="col-xxl-5 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="2000">
+                           <div class="pb-5">
+                               <!-- <img src="assets/image/포스로그인.png" class="project_img" alt=""> -->
+                               <img src="assets/image/프로젝트.jpg" class="project_img" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xxl border-2 border-bottom content_text py-5 fs-1 fw-bold"
+                         data-aos="fade-left" data-aos-duration="2000">
+                            Spring을 활용한 웹서버 Project <br>
+                            <div class="pt-5"><button onclick="location.href='project1.html'" type="button" class="btn btn-outline-warning fs-1">LEARN MORE</button></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- content 3  -->      
+        <div id="contact" class="bg-dark text-light p-5">
+            <h1 class="content_title p-5" data-aos="fade-right" data-aos-duration="2500">Contact</h1>
+            <div class="container py-5">
+                <div class="row fs-4">
+                  <div class="col-lg py-5" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="tel_a"><i class="fas fa-mobile-alt"></i> &nbsp;&nbsp;010 - 0000 - 0000</span>
+                  </div>
+                  <div class="col-lg py-5" data-aos="fade-up" data-aos-duration="1800">
+                    <i class="far fa-envelope"></i>
+                    <a class="email_a text-decoration-none" href="mailto:ahosism@gmail.com">
+                         &nbsp;&nbsp;ahosism@gmail.com</a>
+                  </div>
+                  <div class="col-lg py-5" data-aos="fade-up" data-aos-duration="2500">
+                    <i class="fab fa-github"></i>
+                    <a class="git_a text-decoration-none" href="https://github.com/Ahos92">
+                         &nbsp;&nbsp;github.com/Ahos92</a>
+                  </div>
+                </div>
+              </div>
+            <div>
+                
+                
+                
+                       
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/myjs.js" ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
